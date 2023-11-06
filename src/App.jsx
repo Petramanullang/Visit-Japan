@@ -1,6 +1,7 @@
 import Navbar from "./Navbar/Navbar";
 import Heroes from "./Heroes/Heroes";
 import Content from "./Content/Content";
+import Content2 from "./Content/Content-2";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       <Navbar />
       <Heroes />
       <Content />
+      <Content2 />
+      
     </div>
   );
 }

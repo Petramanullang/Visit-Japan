@@ -5,10 +5,11 @@
   padding: 0 80px;
   height: 80px;
   width: 95%;
-  margin-left: 35px;
+  top: 0;
   position: fixed;
   box-sizing: border-box;
   border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
   z-index: 100;
 }
 
@@ -22,12 +23,19 @@
   color: white;
   font-size: 25px;
   font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo-text:hover {
+  transform: scale(1.05);
+  color: #FCF5ED;
 }
 
 .logo img {
   width: 40px;
   height: 38px;
-  background-color: #EEEDED;
+  background-color: #eeeded;
   border-radius: 50%;
 }
 
@@ -42,16 +50,21 @@
   font-size: 20px;
   font-weight: bold;
   border-bottom: 3px solid transparent;
-  padding: 28px 30px;
+  padding: 28.7px 30px;
 }
 
 .navbar-right ul > li:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid #ce5a67;
 }
 
 .navbar-right > ul > li > a {
   text-decoration: none;
   color: white;
+}
+
+.navbar-right > ul > li > a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search svg {
@@ -60,4 +73,5 @@
   fill: white;
   stroke: white;
   stroke-width: 1px;
+  cursor: pointer;
 }

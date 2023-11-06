@@ -1,3 +1,61 @@
-h1 {
-    color: white;
+h1,
+h3,
+h4 {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 50px;
+  margin: 80px 0;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  bottom: 150px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.card {
+  width: 250px;
+  height: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(0.8);
+}
+
+.card img:hover {
+  transform: scale(1.1);
 }

@@ -1,16 +1,50 @@
+h2,
+p,
+svg {
+  color: white;
+}
+
 .heroes-wrapper {
   width: 100%;
   height: 100vh;
   background-image: url(../assets/img/heroes3.png);
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   filter: brightness(0.7);
+}
+
+.wrapper {
+  padding: 80px;
+  padding-top: 570px;
 }
 
 .heroes-text {
   color: white;
   font-size: 100px;
   font-weight: bolder;
-  margin-left: 100px;
+}
+
+.heroes-bottom {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 200px;
+  padding: 50px 50px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.menu:hover {
+  border-bottom: 4px solid #ce5a67;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

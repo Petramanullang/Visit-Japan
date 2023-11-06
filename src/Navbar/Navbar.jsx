@@ -6,9 +6,13 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       <div className="navbar-left">
         <div className="logo">
-          <img src="./src/assets/img/tori.png" alt="" />
+          <a href="">
+            <img src="./src/assets/img/tori.png" alt="" />
+          </a>
         </div>
-        <span className="logo-text">TRAVEL</span>
+        <a href="" className="logo-text">
+          <span>TRAVEL</span>
+        </a>
       </div>
       <div className="navbar-right">
         <ul>
